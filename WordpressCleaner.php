@@ -3,7 +3,7 @@ class WordpressCleaner {
     public static $tasks = [
         'revisions' => [
             'name' => 'Post revisions',
-            'desc' => 'Deletes all post revisions (past versions of the post). <strong>Select it only if you know what it means</strong>.',
+            'desc' => 'Deletes all post revisions (past versions of the post). <strong>Select only if you understand consequences</strong>.',
             'query' => "DELETE FROM {prefix}posts WHERE post_type = 'revision'",
             'default' => false
         ],
@@ -21,7 +21,7 @@ class WordpressCleaner {
         ],
         'unapproved_comments' => [
             'name' => 'Unapproved comments',
-            'desc' => 'Removes comments staying in moderation queue',
+            'desc' => 'Removes comments pending in moderation queue',
             'query' => "DELETE FROM {prefix}comments WHERE comment_approved = '0'",
             'default' => false
         ],
