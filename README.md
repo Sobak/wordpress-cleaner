@@ -29,7 +29,8 @@ entry:
 ```
 
 Element's key is used as a internal task identifier. Keys in associative array are rather
-self descriptive.
+self explanatory. One thing worth noting is the fact that whenever you use `{prefix}` in the
+query, it will be substituted with WordPress table prefix.
 
 ### More advanced tasks
 You might need more complex logic than just execute query. If so, pass `false` as `query`
@@ -46,7 +47,7 @@ take any arguments and must return number of deleted items. Look at the example.
 ]
 
 // Custom method in WordpressCleaner.php
-private taskAdvancedTask() {
+private function taskAdvancedTask() {
     // Your awesome complex logic
 
     return 666; // Return number of removed rows/items
