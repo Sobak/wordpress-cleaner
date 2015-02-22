@@ -30,6 +30,8 @@ if ($_POST) {
 
 <form action="" method="post">
 <?php if (!$_POST): ?>
+<p class="warning">Before running the script, make sure you've got backup of your database!</p>
+
 <table cellspacing="0">
 <tr>
     <th colspan="2">Database connection settings</th>

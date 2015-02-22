@@ -63,7 +63,7 @@ class WordpressCleaner {
         $tasks = $_POST['tasks'];
 
         if (!is_array($tasks) || empty($tasks)) {
-            echo '<strong>Error:</strong> You have to select at least one task';
+            echo '<p class="warning">Error: You have to select at least one task.</p>';
             exit;
         }
 

@@ -87,6 +87,11 @@ table tr.submit td {
     text-align: center;
 }
 
+p.warning {
+    color: #800;
+    font-weight: bold;
+}
+
 footer {
     text-align: center;
     font-size: 0.8em;
