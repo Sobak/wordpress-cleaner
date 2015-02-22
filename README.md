@@ -39,7 +39,7 @@ take any arguments and must return number of deleted items. Look at the example.
 ```php
 // Entry in WordpressCleaner::$task
 'advanced_task' => [
-    'name' => 'Advanced query',
+    'name' => 'Advanced task',
     'desc' => 'More than just a query!',
     'query' => false,
     'default' => false
