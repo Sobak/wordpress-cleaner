@@ -50,7 +50,7 @@ take any arguments and must return number of deleted items. Look at the example.
 private function taskAdvancedTask() {
     // Your awesome complex logic
 
-    return 666; // Return number of removed rows/items
+    return 667; // Return number of removed rows/items
 }
 ```
 

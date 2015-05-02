@@ -1,5 +1,5 @@
 <?php
-class WordpressCleaner {
+class final WordpressCleaner {
     public static $tasks = [
         'revisions' => [
             'name' => 'Post revisions',
@@ -68,6 +68,8 @@ class WordpressCleaner {
         }
 
         foreach (array_keys($tasks) as $taskKey) {
+            if (!array_key_exists($taskKey, self::$tasks)) continue;
+
             $task = self::$tasks[$taskKey];
 
             if ($task['query']) {
