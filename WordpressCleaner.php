@@ -68,7 +68,9 @@ class final WordpressCleaner {
         }
 
         foreach (array_keys($tasks) as $taskKey) {
-            if (!array_key_exists($taskKey, self::$tasks)) continue;
+            if (!array_key_exists($taskKey, self::$tasks)) {
+            	continue;
+            }
 
             $task = self::$tasks[$taskKey];
 
