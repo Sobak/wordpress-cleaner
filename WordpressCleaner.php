@@ -1,5 +1,5 @@
 <?php
-class final WordpressCleaner {
+final class WordpressCleaner {
     public static $tasks = [
         'revisions' => [
             'name' => 'Post revisions',
