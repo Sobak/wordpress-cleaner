@@ -13,6 +13,13 @@ size of your tables. Currently script recognizes following types of unneeded dat
 * transient options
 * akismet commentmeta
 
+Usage
+-----
+
+Just drop these files in their own directory, name it `cleaner` or whatever. Visit the URL,
+fill in the form and run it. Oh, and really, don't ignore that big red warning and backup
+your database before you start.
+
 Format of tasks
 ---------------
 
